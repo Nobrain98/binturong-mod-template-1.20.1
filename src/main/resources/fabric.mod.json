@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "binturongmod",
+	"version": "${version}",
+	"name": "Binturong Mod",
+	"description": "A mod to add binturongs to your MC world",
+	"authors": [
+		"Nobrain98"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/binturongmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nobrain98.binturong.BinturongMod"
+		],
+		"client": [
+			"net.nobrain98.binturong.BinturongClient"
+		],
+		"fabric-datagen": [
+			"net.nobrain98.binturong.BinturongModDataGenerator"
+		]
+	},
+	"mixins": [
+		"binturongmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
